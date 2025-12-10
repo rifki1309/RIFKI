@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Muhamad Rifki Aditya</title>
+    <!-- Memuat Tailwind CSS dari CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Konfigurasi Tailwind untuk warna dan font -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#1D4ED8', // Biru gelap
+                        'secondary-blue': '#3B82F6', // Biru sedang
+                        'light-blue': '#DBEAFE', // Biru sangat terang
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Mengatur font dasar dan menghilangkan margin default */
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F9FAFB; /* Latar belakang sangat terang */
+        }
+        /* Efek hover pada tombol */
+        .btn-primary:hover {
+            background-color: #2563EB; /* Biru yang sedikit lebih cerah saat hover */
+        }
+        /* Responsif: Padding di bagian atas untuk navigasi yang lebih baik */
+        @media (min-width: 640px) {
+            .nav-padding {
+                padding-top: 100px;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header / Navigasi (Fixed Top) -->
+    <header class="fixed top-0 left-0 right-0 z-10 bg-white shadow-md">
+        <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-primary-blue">M. Rifki Aditya</h1>
+            <!-- Navigasi desktop -->
+            <div class="hidden sm:block">
+                <a href="#home" class="text-gray-600 hover:text-primary-blue transition duration-150 mx-3 font-medium">Beranda</a>
+                <a href="#about" class="text-gray-600 hover:text-primary-blue transition duration-150 mx-3 font-medium">Tentang</a>
+                <a href="#education" class="text-gray-600 hover:text-primary-blue transition duration-150 mx-3 font-medium">Pendidikan</a>
+            </div>
+            <!-- Tombol untuk kontak (Opsional) -->
+            <a href="#contact" class="hidden sm:inline-block bg-primary-blue text-white py-2 px-4 rounded-lg shadow-lg hover:bg-secondary-blue transition duration-300 font-semibold">Hubungi Saya</a>
+        </nav>
+    </header>
+
+    <main class="nav-padding">
+        
+        <!-- Bagian 1: Beranda (Home / Hero Section) -->
+        <section id="home" class="py-20 sm:py-32 bg-light-blue">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <!-- Avatar Placeholder -->
+                <div class="mx-auto w-32 h-32 rounded-full bg-secondary-blue flex items-center justify-center mb-6 shadow-xl">
+                    <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                </div>
+                
+                <h2 class="text-4xl sm:text-6xl font-extrabold text-gray-900 mb-4 leading-tight">
+                    Halo, Saya <span class="text-primary-blue">Muhamad Rifki Aditya</span>
+                </h2>
+                <p class="text-xl sm:text-2xl text-gray-700 mb-8 font-light">
+                    Pelajar Teknik Komputer dan Jaringan (TKJ) yang bersemangat.
+                </p>
+                
+                <!-- Tombol CTA -->
+                <div class="space-x-4">
+                    <a href="#education" class="btn-primary bg-primary-blue text-white py-3 px-8 rounded-xl shadow-xl transition duration-300 inline-block font-semibold transform hover:scale-105">
+                        Lihat Riwayat Pendidikan
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian 2: Tentang Saya (About Section) -->
+        <section id="about" class="py-20 sm:py-28 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-3xl sm:text-4xl font-bold text-center text-primary-blue mb-10 border-b-2 border-secondary-blue pb-2 inline-block">
+                    Tentang Saya
+                </h3>
+                <div class="bg-gray-50 p-6 sm:p-8 rounded-2xl shadow-lg border border-gray-200">
+                    <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                        Saya Muhamad Rifki Aditya, saat ini berstatus sebagai seorang **Pelajar** yang berfokus pada bidang Teknologi Komputer dan Jaringan (TKJ).
+                    </p>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        Saya memiliki minat yang kuat dalam mempelajari seluk-beluk jaringan komputer, konfigurasi perangkat keras, dan keamanan sistem. Portofolio ini adalah wadah untuk menunjukkan perjalanan akademik dan proyek-proyek yang telah saya kerjakan selama masa studi. Saya siap untuk terus belajar dan menerapkan ilmu yang didapat di dunia kerja.
+                    </p>
+                </div>
+                
+                <!-- Detail Kontak Sederhana (untuk Mobile) -->
+                <div class="mt-12 text-center">
+                    <p class="text-lg font-medium text-gray-800">Cepat Hubungi:</p>
+                    <a href="mailto:emailanda@contoh.com" class="text-secondary-blue hover:text-primary-blue font-semibold transition duration-150">emailanda@contoh.com</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian 3: Riwayat Pendidikan (Education Section) -->
+        <section id="education" class="py-20 sm:py-28 bg-light-blue">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-3xl sm:text-4xl font-bold text-center text-primary-blue mb-12 border-b-2 border-secondary-blue pb-2 inline-block">
+                    Riwayat Pendidikan
+                </h3>
+
+                <div class="space-y-8">
+                    <!-- Data Pendidikan Anda -->
+                    <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-xl border-l-4 border-primary-blue transition duration-300 hover:shadow-2xl">
+                        <div class="flex items-start justify-between">
+                            <div>
+                                <h4 class="text-2xl font-bold text-gray-900">SMK Dewi Sartika</h4>
+                                <p class="text-lg text-secondary-blue font-semibold mt-1">Teknik Komputer dan Jaringan (TKJ)</p>
+                            </div>
+                            <span class="text-sm font-medium bg-secondary-blue text-white px-3 py-1 rounded-full self-start mt-1">20XX - Saat Ini</span>
+                        </div>
+                        <p class="text-gray-600 mt-4 leading-relaxed">
+                            Di sini, saya mendalami berbagai aspek TKJ, termasuk instalasi dan konfigurasi jaringan LAN/WAN, sistem operasi, serta dasar-dasar pemrograman dan keamanan siber. Kurikulum fokus pada praktik keahlian yang relevan dengan industri.
+                        </p>
+                    </div>
+
+                    <!-- Tambahkan riwayat pendidikan lain (jika ada) -->
+                    <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-xl border-l-4 border-gray-400 transition duration-300 hover:shadow-2xl">
+                        <div class="flex items-start justify-between">
+                            <div>
+                                <h4 class="text-2xl font-bold text-gray-900">SMP (Nama Sekolah Anda)</h4>
+                                <p class="text-lg text-gray-500 font-semibold mt-1">Umum</p>
+                            </div>
+                            <span class="text-sm font-medium bg-gray-400 text-white px-3 py-1 rounded-full self-start mt-1">20XX - 20XX</span>
+                        </div>
+                        <p class="text-gray-600 mt-4 leading-relaxed">
+                            Masa pendidikan dasar yang membentuk fondasi akademis dan minat awal dalam teknologi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian 4: Kontak (Footer) -->
+        <footer id="contact" class="bg-primary-blue py-12">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+                <h4 class="text-3xl font-bold mb-4">Siap Berkolaborasi!</h4>
+                <p class="text-lg mb-6 opacity-80">
+                    Meskipun saya masih pelajar, saya antusias untuk menerapkan pengetahuan dan keterampilan TKJ saya dalam proyek nyata.
+                </p>
+                <a href="mailto:emailanda@contoh.com" class="inline-block bg-white text-primary-blue font-bold py-3 px-8 rounded-xl shadow-2xl transition duration-300 transform hover:scale-105 hover:shadow-none">
+                    Kirim Email ke Muhamad Rifki
+                </a>
+                <p class="mt-8 text-sm opacity-60">
+                    &copy; 2025 Muhamad Rifki Aditya. Portofolio Sederhana.
+                </p>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Script sederhana untuk smooth scrolling (opsional) -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                // Hanya jalankan smooth scroll untuk link navigasi
+                if(this.closest('nav')) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
